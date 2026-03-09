@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my cv - M. Iqbal Maulana</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="https://i.ibb.co.com/bjjpS1Fv/Whats-App-Image-2026-02-08-at-10-19-23.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- abstract organic shapes background -->
+    <div class="organic-bg">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <!-- minimalist header -->
+    <header class="header">
+        <div class="header-container">
+            <a href="#home" class="logo">MM</a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav" id="nav">
+                <a href="#home" class="nav-link active">beranda</a>
+                <a href="#cv" class="nav-link">tentang</a>
+                <a href="#portfolio" class="nav-link">Portofolio</a>
+                <a href="#game" class="nav-link">game</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- home section -->
+        <section id="home" class="section active-section">
+            <div class="container">
+                <div class="home-grid">
+                    <div class="home-content-left">
+                        <span class="greeting">halo, saya</span>
+                        <h1 class="name">M. Iqbal Maulana</h1>
+                        <p class="title">mahasiswa · teknologi · eksplorator</p>
+                        <p class="bio">menjelajahi AI, cybersecurity, dan hal-hal di luar nalar. percaya bahwa kode dan konspirasi punya benang merah.</p>
+                        <div class="home-cta">
+                            <a href="#cv" class="btn btn-primary" onclick="navigateToSection('cv'); return false;">kenalan yuk</a>
+                            <a href="#game" class="btn btn-outline" onclick="navigateToSection('game'); return false;">main game</a>
+                        </div>
+                    </div>
+                    <div class="home-content-right">
+                        <div class="avatar-card">
+                            <div class="avatar-frame">
+                                <img src="https://i.ibb.co.com/KpqH49Jb/Whats-App-Image-2026-03-08-at-08-06-45.jpg" alt="Jarry Purba">
+                            </div>
+                            <div class="avatar-dot dot-1"></div>
+                            <div class="avatar-dot dot-2"></div>
+                            <div class="avatar-dot dot-3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- cv section -->
+        <section id="cv" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">digital cv</h2>
+                    <div class="section-line"></div>
+                </div>
+                
+                <div class="cv-grid-modern">
+                    <!-- profile card -->
+                    <div class="card profile-card">
+                        <div class="profile-header">
+                            <img src="https://i.ibb.co.com/KpqH49Jb/Whats-App-Image-2026-03-08-at-08-06-45.jpg" alt="Jarry Purba" class="profile-img">
+                            <div class="profile-info">
+                                <h3>M. Iqbal Maulana</h3>
+                                <p class="profile-tag">@M. Iqbal Maulana</p>
+                                <p class="profile-location">Pelalawan, 29 Des 2006</p>
+                            </div>
+                        </div>
+                        <div class="profile-contact">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>Jarrypurba@gmail.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <span>0858-3735-4014</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- about card -->
+                    <div class="card about-card">
+                        <h3 class="card-heading"><i class="fas fa-user-astronaut"></i> tentang saya</h3>
+                        <p class="about-text-modern">
+                            Mahasiswa Teknik Informatika di Politeknik LP3I Pekanbaru. 
+                            Punya rasa penasaran tinggi sama AI & cybersecurity. 
+                            Di waktu luang suka baca teori konspirasi, eksplor internet, 
+                            dan ngobrolin hal-hal yang enggak biasa.
+                        </p>
+                    </div>
+
+                    <!-- education card -->
+                    <div class="card edu-card">
+                        <h3 class="card-heading"><i class="fas fa-graduation-cap"></i> pendidikan</h3>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-year">2025 - sekarang</span>
+                                    <h4>Politeknik LP3I Pekanbaru</h4>
+                                    <p>Teknik Informatika</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-year">2022 - 2025</span>
+                                    <h4>Pesantren Darul Huda Lirik</h4>
+                                    <p>pendidikan pesantren</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- skills card -->
+                    <div class="card skills-card">
+                        <h3 class="card-heading"><i class="fas fa-code"></i> skill set</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">dasar pemrograman</span>
+                            <span class="skill-tag">MS Word</span>
+                            <span class="skill-tag">Excel</span>
+                            <span class="skill-tag">PowerPoint</span>
+                            <span class="skill-tag">HTML/CSS</span>
+                            <span class="skill-tag">problem solving</span>
+                        </div>
+                    </div>
+
+                    <!-- hobbies card -->
+                    <div class="card hobbies-card">
+                        <h3 class="card-heading"><i class="fas fa-heart"></i> hobi & interest</h3>
+                        <div class="hobby-grid">
+                            <div class="hobby-item">
+                                <i class="fas fa-music"></i>
+                                <span>music</span>
+                            </div>
+                            <div class="hobby-item">
+                                <i class="fas fa-search"></i>
+                                <span>riset info</span>
+                            </div>
+                            <div class="hobby-item">
+                                <i class="fas fa-book-open"></i>
+                                <span>teori konspirasi</span>
+                            </div>
+                            <div class="hobby-item">
+                                <i class="fas fa-robot"></i>
+                                <span>explore AI</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- portfolio section -->
+        <section id="portfolio" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Portofolio</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <!-- admin login toggle (minimal) -->
+                <div class="portfolio-admin-mini">
+                    <button onclick="openPortfolioLoginModal()" class="admin-mini-btn" id="portfolioAdminLoginBtn">
+                        <i class="fas fa-lock"></i> admin
+                    </button>
+                    <span class="admin-mini-hint" id="portfolioAdminStatus"></span>
+                </div>
+
+                <!-- login modal -->
+                <div id="portfolioLoginModal" class="modal-mini">
+                    <div class="modal-mini-content">
+                        <div class="modal-mini-header">
+                            <h3>login admin</h3>
+                            <button onclick="closePortfolioLoginModal()" class="modal-mini-close">&times;</button>
+                        </div>
+                        <div class="modal-mini-body">
+                            <input type="text" id="portfolioUsername" placeholder="username" class="modal-mini-input">
+                            <input type="password" id="portfolioPassword" placeholder="password" class="modal-mini-input">
+                            <div id="portfolioLoginError" class="modal-mini-error" style="display: none;">username/password salah</div>
+                            <button onclick="handlePortfolioLogin()" class="modal-mini-btn">masuk</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- admin panel mini -->
+                <div class="portfolio-admin-panel-mini" id="portfolioAdminPanel" style="display: none;">
+                    <div class="admin-panel-header">
+                        <span><i class="fas fa-cog"></i> tambah karya</span>
+                        <button onclick="logoutPortfolioAdmin()" class="admin-panel-logout"><i class="fas fa-sign-out-alt"></i></button>
+                    </div>
+                    <div class="admin-panel-form">
+                        <select id="portfolioCategory" class="admin-mini-select">
+                            <option value="organisasi">organisasi</option>
+                            <option value="individu">individu</option>
+                        </select>
+                        <input type="text" id="portfolioTitle" placeholder="judul" class="admin-mini-input">
+                        <textarea id="portfolioDescription" placeholder="deskripsi" class="admin-mini-textarea" rows="2"></textarea>
+                        <input type="url" id="portfolioImage" placeholder="link gambar" class="admin-mini-input" onchange="previewPortfolioImage(this.value)">
+                        <input type="url" id="portfolioLink" placeholder="link repo (opsional)" class="admin-mini-input">
+                        <div id="portfolioImagePreview" class="admin-mini-preview"></div>
+                        <button onclick="addPortfolioItem()" class="admin-mini-submit" id="portfolioSaveBtn">tambah</button>
+                    </div>
+                </div>
+
+                <!-- filter & search minimal -->
+                <div class="portfolio-toolbar">
+                    <div class="filter-group">
+                        <button class="filter-chip active" data-filter="all">semua</button>
+                        <button class="filter-chip" data-filter="organisasi">organisasi</button>
+                        <button class="filter-chip" data-filter="individu">individu</button>
+                    </div>
+                    <div class="search-group">
+                        <i class="fas fa-search search-icon-mini"></i>
+                        <input type="text" id="searchPortfolio" placeholder="cari karya..." class="search-input-mini">
+                    </div>
+                </div>
+
+                <!-- portfolio grid minimal -->
+                <div class="portfolio-grid-mini" id="portfolioGrid">
+                    <div class="loading-skeleton-mini" id="portfolioSkeleton">
+                        <div class="skeleton-item"></div>
+                        <div class="skeleton-item"></div>
+                        <div class="skeleton-item"></div>
+                    </div>
+                </div>
+
+                <!-- stats & pagination -->
+                <div class="portfolio-footer">
+                    <div class="portfolio-stats-mini" id="portfolioStats"></div>
+                    <div class="pagination-mini" id="portfolioPagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- game section -->
+        <section id="game" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">🎮 quickmath</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="game-card-modern" id="game-card">
+                    <!-- start screen -->
+                    <div id="start-screen" class="game-screen-modern">
+                        <div class="game-icon">🧮</div>
+                        <h3 class="game-title-modern">QuickMath</h3>
+                        <p class="game-subtitle-modern">masukkan nama untuk memulai</p>
+                        <input type="text" id="player-name-input" class="game-input-modern" placeholder="nama kamu" maxlength="20">
+                        <div id="name-error" class="game-error">nama harus diisi!</div>
+                        <p class="game-info-modern">10 soal · 10 detik/soal</p>
+                        <button onclick="validateAndShowLoading()" class="game-btn-modern" id="startButton">mulai</button>
+                    </div>
+
+                    <!-- loading screen -->
+                    <div id="loading-screen" class="game-screen-modern hidden">
+                        <div class="loading-animation">
+                            <div class="loading-dot-modern"></div>
+                            <div class="loading-dot-modern"></div>
+                            <div class="loading-dot-modern"></div>
+                        </div>
+                        <div class="player-name-modern" id="loading-player-name"></div>
+                        <div class="loading-bar-modern">
+                            <div class="loading-progress" id="loadingBar"></div>
+                        </div>
+                        <div class="loading-percentage-modern" id="loadingPercentage">0%</div>
+                        <div class="loading-tip-modern">menyiapkan soal...</div>
+                    </div>
+
+                    <!-- play screen -->
+                    <div id="play-screen" class="game-screen-modern hidden">
+                        <div class="player-name-modern" id="play-player-name"></div>
+                        <div class="quest-counter" id="quest-number">soal 1/10</div>
+                        <div class="timer-modern">
+                            <div class="timer-progress-modern" id="progress"></div>
+                        </div>
+                        <div class="question-modern" id="display-question">0 + 0</div>
+                        <input type="number" id="answer-input" class="answer-input-modern" placeholder="?" autocomplete="off">
+                        <small class="hint-modern">enter ➡️ jawab</small>
+                    </div>
+
+                    <!-- result screen -->
+                    <div id="result-screen" class="game-screen-modern hidden">
+                        <div class="result-icon" id="result-icon">🏁</div>
+                        <h3 class="result-title-modern" id="result-title">selesai!</h3>
+                        <div class="player-name-modern" id="result-player-name"></div>
+                        <div class="score-modern" id="final-score">skor: 0/10</div>
+                        <div class="result-message-modern" id="result-message"></div>
+                        <div class="result-table-container">
+                            <table class="result-table-modern">
+                                <thead>
+                                    <tr><th>#</th><th>jawabanmu</th><th>benar</th></tr>
+                                </thead>
+                                <tbody id="result-body"></tbody>
+                            </table>
+                        </div>
+                        <button onclick="showStartScreen()" class="game-btn-modern">main lagi</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer simple -->
+    <footer class="footer-minimal">
+        <div class="container">
+            <div class="footer-content-minimal">
+                <p>© 2026 M. Iqbal Maulana · dibangun dengan kopi dan rasa penasaran</p>
+                <div class="footer-social-minimal">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- confirm modal -->
+    <div id="confirmModal" class="modal-mini confirm-modal-mini" style="display: none;">
+        <div class="modal-mini-content">
+            <div class="modal-mini-header">
+                <h3>konfirmasi</h3>
+            </div>
+            <div class="modal-mini-body">
+                <p id="confirmMessage">yakin mau hapus?</p>
+                <div class="confirm-actions">
+                    <button onclick="confirmAction()" class="confirm-btn confirm-yes">ya</button>
+                    <button onclick="closeConfirmModal()" class="confirm-btn confirm-no">batal</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- toast container -->
+    <div id="toastContainer" class="toast-container-mini"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
